@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Streamlit 앱",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "prototype-01-basic/app.py"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
