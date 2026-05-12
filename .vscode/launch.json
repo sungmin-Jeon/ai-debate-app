@@ -2,15 +2,64 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Streamlit 앱",
+            "name": "prototype-01-basic 실행",
             "type": "debugpy",
             "request": "launch",
             "module": "streamlit",
             "args": [
                 "run",
-                "prototype-01-basic/app.py"
+                "${workspaceFolder}/prototype-01-basic/app.py",
+                "--server.address",
+                "0.0.0.0",
+                "--server.port",
+                "8501"
             ],
-            "console": "integratedTerminal"
-        }
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/prototype-01-basic"
+            }
+        },
+        {
+            "name": "prototype-02 실행",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/prototype-02/app/main_mode.py",
+                "--server.address",
+                "0.0.0.0",
+                "--server.port",
+                "8501"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/prototype-02"
+            }
+        },
+                {
+            "name": "prototype-03 실행",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/prototype-03/app/main.py",
+                "--server.address",
+                "0.0.0.0",
+                "--server.port",
+                "8501"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/prototype-03"
+            }
+        },
     ]
 }
